@@ -1,0 +1,40 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: C:/Users/Tsubasa_gen_3/Desktop/New folder (8)/hac_data # dataset root dir
+train: C:/Users/Tsubasa_gen_3/Desktop/New folder (8)/hac_data/images/train # train images (relative to 'path') 128 images
+val: C:/Users/Tsubasa_gen_3/Desktop/New folder (8)/hac_data/images/test # val images (relative to 'path') 128 images
+test: # test images (optional)
+
+names:
+    0: plane
+    1: helicopter
+# YOLO training configuration for small object detection
+# img-size: 960
+# batch-size: 16
+# epochs: 300
+# lr0: 0.01
+# lrf: 0.2
+# momentum: 0.937
+# weight_decay: 0.0005
+
+# anchors: 
+#   - [10, 13, 16, 30, 33, 23]
+
+# iou-thres: 0.25
+# nms-thres: 0.6
+
+# # Data augmentation
+# mosaic: 1.0
+# hsv_h: 0.015
+# hsv_s: 0.7
+# hsv_v: 0.4
+# scale: 0.5
+# flipud: 0.5
+# fliplr: 0.5
+# degrees: 10
+
+# # Optimizer
+# optimizer: 'Adam'
+
+# # Other
+# multi-scale: True
+# warmup-epochs: 3
